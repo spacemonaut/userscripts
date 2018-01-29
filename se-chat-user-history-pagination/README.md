@@ -2,6 +2,8 @@
 
 This page adds some pagination to a user's chat history page on the Stack Exchange chat network (the page you reach via: their profile -> recent).
 
+![preview picture of the buttons](preview.png)
+
 It adds these buttons at the top and bottom:
 
 * *prev* & *next*
