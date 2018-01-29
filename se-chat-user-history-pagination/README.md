@@ -8,10 +8,9 @@ It adds these buttons at the top and bottom:
 
 * *prev* & *next*
 * *prev 10* & *next 10* for navigating 10 pages at a time
-* *first* for for page 0
+* *first* for going back to the first page.
 
-Page 0 is the first page. The *first* & *prev 10* buttons will show up on the left hand side and only when they're relevant.
-(Mostly to be out of your way and not mess around with button positions.)
+Page 0 is the first page. The *first* button will show up on the left to keep it out of the way.
 
 # [Click here to install](https://github.com/spacemonaut/userscripts/raw/master/se-chat-user-history-pagination/se-chat-user-history-pagination.user.js)
 
