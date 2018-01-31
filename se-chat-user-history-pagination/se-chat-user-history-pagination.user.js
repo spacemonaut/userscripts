@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Stack Exchange Chat History Pagination
 // @namespace    https://github.com/spacemonaut/
-// @version      1.2.0
+// @version      1.2.1
 // @description  Add pagination buttons to the recent messages tab for a Stack Exchange chat user.
 // @author       spacemonaut
 // @match        https://chat.stackexchange.com/users/*
@@ -16,10 +16,11 @@
     return;
   }
 
+  let FIRST_PAGE = 1;
   let url = window.location.href;
   let pageParamRegex = /\bpage=\d+\b/g;
   let pageWasDefined = false;
-  let currentPage = 0;
+  let currentPage = FIRST_PAGE;
 
   setPage();
   addNavigationButtons();
@@ -73,11 +74,11 @@
     navbar.appendChild(leftPart);
     navbar.appendChild(rightPart);
 
-    if (currentPage > 0) {
-      let firstButton = createButton('&#8630; first page', 0);
+    if (currentPage > FIRST_PAGE) {
+      let firstButton = createButton('&#8630; first page', FIRST_PAGE);
       leftPart.appendChild(firstButton);
 
-      if (currentPage >= 10) {
+      if (currentPage >= (FIRST_PAGE + 10)) {
         let megaPrevButton = createButton('&lArr; prev 10', currentPage - 10);
         rightPart.appendChild(megaPrevButton);
       }
