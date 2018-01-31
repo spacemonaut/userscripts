@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scryfall Tagger Enhancements
 // @namespace    https://github.com/spacemonaut/
-// @version      0.2
+// @version      0.2.1
 // @description  Enhance the Scryfall tagger. Right now, pagination.
 // @author       spacemonaut
 // @match        *://tagger.scryfall.com/*
@@ -20,19 +20,14 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    position: relative;
+    z-index: 1;
   }
   `;
 
   const overrideCss = `
-  @media (min-width: 850px) {
-    .illustration-detail .card {
-      position: unset;
-    }
-
-    .illustration-detail__card {
-      position: sticky;
-      top: 15px;
-    }
+  .illustration-detail__card a {
+    z-index: 2;
   }
   `;
 
@@ -64,7 +59,7 @@
 
     let overrideStyles = document.createElement('style');
     overrideStyles.innerHTML = overrideCss;
-    //document.head.appendChild(overrideStyles);
+    document.head.appendChild(overrideStyles);
   }
 
   function makeUrlForCard(setCode, number) {
