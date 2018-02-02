@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         Stack Exchange Chat History Pagination
 // @namespace    https://github.com/spacemonaut/
-// @version      1.2.1
+// @version      1.2.2
 // @description  Add pagination buttons to the recent messages tab for a Stack Exchange chat user.
 // @author       spacemonaut
 // @match        https://chat.stackexchange.com/users/*
+// @match        https://chat.meta.stackexchange.com/users/*
+// @match        https://chat.stackoverflow.com/users/*
 // @grant        none
 // @updateURL    https://raw.githubusercontent.com/spacemonaut/userscripts/master/se-chat-user-history-pagination/se-chat-user-history-pagination.user.js
 // ==/UserScript==
