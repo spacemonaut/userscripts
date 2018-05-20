@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Scryfall Tagger Enhancements
 // @namespace    https://github.com/spacemonaut/
-// @version      0.2.1
+// @version      0.2.2
 // @description  Enhance the Scryfall tagger. Right now, pagination.
 // @author       spacemonaut
 // @match        *://tagger.scryfall.com/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/spacemonaut/userscripts/master/scryfall-tagger-enhancements/scryfall-tagger-enhancements.user.js
+// @updateURL    https://github.com/spacemonaut/scryfall-enhancements/raw/master/release/scryfall-enhancements.user.js
+// @downloadURL  https://github.com/spacemonaut/scryfall-enhancements/raw/master/release/scryfall-enhancements.user.js
 // ==/UserScript==
 
 (() => {
