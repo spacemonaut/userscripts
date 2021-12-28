@@ -5,8 +5,8 @@
 // @grant       none
 // @include     https://chat.stackexchange.com/rooms/*
 // @include     https://chat.stackexchange.com/transcript/*
-// @version     1.5.0
-// @downloadURL https://raw.githubusercontent.com/spacemonaut/userscripts/master/rpg.se-chat-fudge-dice.user/rpg.se-chat-fudge-dice.user.user.js
+// @version     1.6.0
+// @downloadURL https://github.com/spacemonaut/rpgse-chat-fudge-dice/raw/main/src/index.user.js
 // ==/UserScript==
 
 // Initially created by @C.Ross (http://userscripts.org/users/168580)
