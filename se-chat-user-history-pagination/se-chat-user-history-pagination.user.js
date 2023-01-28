@@ -11,7 +11,7 @@
 // @updateURL    https://raw.githubusercontent.com/spacemonaut/userscripts/master/se-chat-user-history-pagination/se-chat-user-history-pagination.user.js
 // ==/UserScript==
 
-(function() {
+(() => {
   'use strict';
 
   if (window.location.search.indexOf('tab=recent') === -1) {
@@ -19,7 +19,6 @@
   }
 
   let FIRST_PAGE = 1;
-  let url = window.location.href;
   let pageParamRegex = /\bpage=\d+\b/g;
   let pageWasDefined = false;
   let currentPage = FIRST_PAGE;
@@ -108,7 +107,6 @@
     let bottomNavbar = topNavbar.cloneNode(true);
 
     let contentElem = document.getElementById('content');
-
 
     var subheaderElem = contentElem.getElementsByClassName('subheader')[0];
     contentElem.insertBefore(topNavbar, subheaderElem.nextSibling);
